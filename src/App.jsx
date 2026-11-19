@@ -109,9 +109,12 @@ export default function App() {
           </header>
 
           <main>
-            <section className="hero" id="home">
-              <video className="hero-video" autoPlay muted loop playsInline poster="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85">
-                <source src="/videos/flight-hero.mp4" type="video/mp4" />
+            <section className="hero" id="home">https
+              <video className="hero-video" autoPlay muted loop playsInline>
+              <source
+  src={`${import.meta.env.BASE_URL}videos/flight-hero.mp4`}
+  type="video/mp4"
+/>
               </video>
               <div className="hero-overlay" />
               <div className="hero-content">
